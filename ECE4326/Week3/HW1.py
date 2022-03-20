@@ -10,8 +10,8 @@ kernel = np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]]) / 16
 
 gaussian_img = cv2.filter2D(gray_img, -1, kernel)
 """
-앞서 Numpy를 통해 구현한 3x3 크기의 Gaussian Kernel을 적용하기 위해, Open CV의 filter2D 함수를 이용하였다.
-filter2D 함수를 사용할 때 각각의 인자는 다음과 같다. cv2.filter2D(@src, @ddepth, @kernel)
+앞서 Numpy를 통해 구현한 3x3 크기의 Gaussian Kernel을 적용하기 위해, Open CV의 filter2D 함수를 이용하였습니다.
+filter2D 함수를 사용할 때 각각의 인자는 다음과 같습니다. cv2.filter2D(@src, @ddepth, @kernel)
 @src: kernel을 적용할 이미지
 @ddepth: 결과 영상의 깊이를 지정하는 인자로, -1로 지정하면 출력 영상의 깊이는 입력 영상과 같게 설정
 @kernel: 적용할 kernel
