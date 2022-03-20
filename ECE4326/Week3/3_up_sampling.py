@@ -1,5 +1,5 @@
 # NN(Nearest Neiborhood) Interpolation
-
+# Original 신호 중 가장 인접한 신호를 이용하여 보간하는 방법
 import cv2
 import numpy as np
 
