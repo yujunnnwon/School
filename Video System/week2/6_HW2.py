@@ -14,7 +14,7 @@ def three_thresholding(value):
 image = cv2.imread("input.jpg", 0)
 
 H, W = image.shape
-result = np.zeros((width, height))
+result = np.zeros((H, W))
 
 for i in range(H):
     for j in range(W):
