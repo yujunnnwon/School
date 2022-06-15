@@ -13,14 +13,14 @@ def three_thresholding(value):
 
 image = cv2.imread("input.jpg", 0)
 
-width, height = image.shape
+H, W = image.shape
 result = np.zeros((width, height))
 
-for x in range(width):
-    for y in range(height):
-        temp = image[x, y]
+for i in range(H):
+    for j in range(W):
+        temp = image[i, j]
         return_value = three_thresholding(temp)
-        result[x, y] = return_value
+        result[i, j] = return_value
 
 cv2.imshow("Original", image)
 cv2.imshow("Result", result.astype(np.uint8))
